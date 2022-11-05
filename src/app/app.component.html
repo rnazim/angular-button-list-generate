@@ -1,0 +1,22 @@
+<body>
+<h1>Hello Azim!</h1>
+<p>
+  Masukan jumlah baris yang diinginkan untuk generate baris sesuai jumlah yang
+  dimasukan.
+</p>
+  <div>
+    <p style="float: left">Jumlah Baris</p>
+    <input
+      style="margin-left: 10px; margin: 14px; margin-right: 4px;"
+      [(ngModel)]="jumlahBaris"
+      type="text"
+    /><button (click)="inputForm()">Submit</button>
+  </div>
+
+  <table id="baris" width="360px">
+    <tr *ngFor="let baris of listOfBaris; let i = index">
+      <td>{{ baris }}</td>
+      <td>Ini baris ke {{ baris }}</td>
+    </tr>
+  </table>
+</body>

@@ -1,0 +1,26 @@
+p {
+  font-family: Lato;
+}
+
+#baris {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#baris td, #baris th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#baris tr:nth-child(even){background-color: #f2f2f2;}
+
+#baris tr:hover {background-color: #ddd;}
+
+#baris th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
